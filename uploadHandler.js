@@ -51,7 +51,7 @@ const uploadHandler = async (req, res) => {
         }
   
         res.status(200).send({
-          message: "Uploaded the file successfully: " + req.file.originalname,
+          message: "File uploaded successfully",
           image: req.file.originalname,
           url: publicUrl,
         });
